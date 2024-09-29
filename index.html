@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+    <!-- google font start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font-awesome  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                  poppins: ["Poppins", 'sans-serif']
+                },
+                backgroundImage: {
+                    'hero-pattern': "url('/img/image.png')",
+                },
+                boxShadow: {
+                    'box': '8px 8px 0px 0px rgba(255, 255, 255)',
+                    'boxone': '0 0 1rem rgba(0, 238, 255)',
+                    'box-hover': '-8px -8px 0px 0px rgba(255, 255, 255)',
+                },
+                colors: {
+                    'text-color': '#828FA6',
+                    'p-color': '#828FA6',
+                    'primery-color': '#3660CC',
+                    'secondary-color': '#3c4d6d',
+                    'border-color': '#3660cc',
+                }
+
+            },
+
+        },
+    };
+</script>
+</head>
+<body class="font-poppins">
+  <!-- header section start  -->
+   <header>
+    <div class="bg-secondary-color">
+        <div class="max-w-[1200px] px-4 m-auto md:flex flex-row justify-between py-4 hidden">
+            <div class="md:flex gap-3 items-center">
+                <i class="fa-solid fa-square-phone text-2xl" style="color: #ffffff;"></i>
+                <h2 class="text-white text-[16px] font-semibold">Emergency: 1-800-643-4300</h2>
+                <i class="fa-regular fa-clock text-2xl" style="color: #ffffff;"></i>
+                 <h2 class="text-white text-[16px] font-semibold">Working Hours: Monday - Saturday: 24 hours</h2>
+            </div>
+            <div class="flex gap-1 items-center">
+                <img src="img/en.png" alt="english">
+                <h2 class="text-white text-[16px] font-semibold pr-7">English</h2>
+            </div>
+        </div>
+    </div>
+    <div class="bg-primery-color py-[0px]">
+        <div class="max-w-[1200px] px-4 m-auto flex justify-between items-center">
+            <div class="">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="">
+                <nav class="md:flex text-white text-[15px] font-medium hidden">
+                    <a href="#" class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500">Home</a>
+                    <a href="#" class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500">Departments</a>
+                    <a href="#" class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500">Doctors</a>
+                    <a href="#" class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500">About</a>
+                    <a href="#" class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500">Gallery</a>
+                    <a href="#" class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500">Testimonials</a>
+                    <a href="#" class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500">Blog</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-4 space-y-2 md:hidden py-4">
+                <span class="text-xl text-white font-medium">Manu</span>
+                <div class="hamburger flex flex-col gap-1 ">
+                    <span class="inline-block h-[2px] w-4 bg-white"></span>
+                    <span class="inline-block h-[2px] w-4 bg-white"></span>
+                </div>
+            </div>
+        </div> 
+    </div>
+   </header>
+  <!-- header section end  -->
+  <!-- hero section start  -->
+   <section class="max-w-[1200px] px-4 m-auto mb-40">
+    <div class="flex justify-between items-center pt-20 flex-col md:flex md:flex-row gap-12">
+        <div>
+            <h1 class="text-4xl font-bold text-secondary-color">Better Doctors!</h1>
+            <p class="max-w-[690px] text-secondary-color text-[18px] font-normal py-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, iusto.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, iusto.
+            </p>
+            <button class="py-3 px-10 bg-primery-color text-white text-[18px] transition ease-out duration-500 hover:bg-secondary-color mr-10 mb-5">About us</button>
+            <button class="py-3 px-10 bg-secondary-color text-white text-[18px] transition ease-out duration-500 hover:bg-primery-color">Contact</button>
+        </div>
+        <div>
+            <img src="img/doctor-slider.jpg" alt="hero">
+        </div>
+    </div>
+    <div class="border-b-2 border"></div>
+   </section>
+  <!-- hero section end  -->
+  <!-- Departments section start  -->
+   <section class="max-w-[1100px] px-4 m-auto">
+    <h1 class="text-4xl font-bold text-secondary-color text-center">Our Departments</h1>
+    <div class="border-b-2 w-[228px] text-center m-auto mt-3 border-border-color"></div>
+    <p class="text-[15px] font-normal m-auto text-center max-w-[600px] pt-5 text-p-color pb-10 leading-7">We understand the importance of approaching each work integrally and believe in the power of simple and easy communication.</p>
+    <div class="flex gap-24">
+        <div class="border">
+            <img src="img/department3.jpg" alt="dock">
+            <img src="img/department-icon3.png" alt="department-icon3" class="bg-secondary-color p-4 rounded-full m-auto hover:bg-primery-color transition ease-out duration-500">
+            <h2 class="text-center text-[22px] font-semibold text-secondary-color pt-3">Eye Care Unit</h2>
+            <p class="text-center text-[15px] font-normal text-p-color px-3"> Our mortgage Advisors can offer you independent advice through our...</p>
+        </div>
+        <div class="border">
+            <img src="img/department3.jpg" alt="dock">
+            <img src="img/department-icon3.png" alt="department-icon3" class="bg-secondary-color p-4 rounded-full m-auto hover:bg-primery-color transition ease-out duration-500">
+            <h2 class="text-center text-[22px] font-semibold text-secondary-color pt-3">Eye Care Unit</h2>
+            <p class="text-center text-[15px] font-normal text-p-color px-3"> Our mortgage Advisors can offer you independent advice through our...</p>
+        </div>
+        <div class="border">
+            <img src="img/department3.jpg" alt="dock">
+            <img src="img/department-icon3.png" alt="department-icon3" class="bg-secondary-color p-4 rounded-full m-auto hover:bg-primery-color transition ease-out duration-500 ">
+            <h2 class="text-center text-[22px] font-semibold text-secondary-color pt-3">Eye Care Unit</h2>
+            <p class="text-center text-[15px] font-normal text-p-color px-3"> Our mortgage Advisors can offer you independent advice through our...</p>
+        </div>
+    </div>
+   </section>
+  <!-- Departments section end  -->
+</body>
+</html>
