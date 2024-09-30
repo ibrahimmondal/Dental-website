@@ -102,31 +102,150 @@
    </section>
   <!-- hero section end  -->
   <!-- Departments section start  -->
-   <section class="max-w-[1100px] px-4 m-auto">
+   <section class="max-w-[1000px] px-4 m-auto">
     <h1 class="text-4xl font-bold text-secondary-color text-center">Our Departments</h1>
     <div class="border-b-2 w-[228px] text-center m-auto mt-3 border-border-color"></div>
     <p class="text-[15px] font-normal m-auto text-center max-w-[600px] pt-5 text-p-color pb-10 leading-7">We understand the importance of approaching each work integrally and believe in the power of simple and easy communication.</p>
-    <div class="flex gap-24">
+    <div class="flex gap-10 justify-between md:flex md:flex-row flex-col mb-28">
         <div class="border">
-            <img src="img/department3.jpg" alt="dock">
-            <img src="img/department-icon3.png" alt="department-icon3" class="bg-secondary-color p-4 rounded-full m-auto hover:bg-primery-color transition ease-out duration-500">
+            <img src="img/department3.jpg" alt="dock" class="w-full">
+            <img src="img/department-icon3.png" alt="department-icon3" class="bg-secondary-color p-4 rounded-full m-auto hover:bg-primery-color transition ease-out duration-500 mt-5">
             <h2 class="text-center text-[22px] font-semibold text-secondary-color pt-3">Eye Care Unit</h2>
-            <p class="text-center text-[15px] font-normal text-p-color px-3"> Our mortgage Advisors can offer you independent advice through our...</p>
+            <p class="text-center text-[15px] font-normal text-p-color px-3 mb-5"> Our mortgage Advisors can offer you independent advice through our...</p>
         </div>
         <div class="border">
-            <img src="img/department3.jpg" alt="dock">
-            <img src="img/department-icon3.png" alt="department-icon3" class="bg-secondary-color p-4 rounded-full m-auto hover:bg-primery-color transition ease-out duration-500">
+            <img src="img/department1.jpg" alt="dock" class="w-full">
+            <img src="img/department-icon3.png" alt="department-icon3" class="bg-secondary-color p-4 rounded-full m-auto hover:bg-primery-color transition ease-out duration-500 mt-5">
             <h2 class="text-center text-[22px] font-semibold text-secondary-color pt-3">Eye Care Unit</h2>
-            <p class="text-center text-[15px] font-normal text-p-color px-3"> Our mortgage Advisors can offer you independent advice through our...</p>
+            <p class="text-center text-[15px] font-normal text-p-color px-3 mb-5"> Our mortgage Advisors can offer you independent advice through our...</p>
         </div>
         <div class="border">
-            <img src="img/department3.jpg" alt="dock">
-            <img src="img/department-icon3.png" alt="department-icon3" class="bg-secondary-color p-4 rounded-full m-auto hover:bg-primery-color transition ease-out duration-500 ">
+            <img src="img/department2.jpg" alt="dock" class="w-full">
+            <img src="img/department-icon3.png" alt="department-icon3" class="bg-secondary-color p-4 rounded-full m-auto hover:bg-primery-color transition ease-out duration-500 mt-5">
             <h2 class="text-center text-[22px] font-semibold text-secondary-color pt-3">Eye Care Unit</h2>
-            <p class="text-center text-[15px] font-normal text-p-color px-3"> Our mortgage Advisors can offer you independent advice through our...</p>
+            <p class="text-center text-[15px] font-normal text-p-color px-3 mb-5"> Our mortgage Advisors can offer you independent advice through our...</p>
         </div>
     </div>
    </section>
   <!-- Departments section end  -->
+  <!-- contact section start  -->
+  <section class="max-w-[1100px] px-4 m-auto mb-24">
+    <div class="md:flex md:justify-between flex md:flex-row flex-col">
+     <div class="bg-primery-color py-7 px-9">
+        <h1 class="text-white text-3xl font-semibold">Make an Appointment</h1>
+        <div class="border-b-2 w-[228px]  mt-3 border-white"></div>
+        <div>
+            <form>
+                <!-- box -->
+                <fieldset>
+            <!-- name -->
+             <div class="flex justify-between flex-col md:flex md:flex-row">
+                 <div>
+                     <h1 class="text-white pt-8">Your Name</h1>  
+                     <input type="text" id="name" required class="h-8 w-full">
+                    </div>
+                    <!-- email -->
+                    <div>
+                        <h1 class="text-white pt-8">Your Email</h1>
+                        <input type="email" id="email"required class="h-8 w-full">
+                    </div>
+                </div>
+                    <!-- phone -->
+                    <div class="flex flex-col gap-6 md:flex lg:flex-row justify-between">
+                        <div> 
+            <h1 for="email" class="text-white pt-8">Your Phone</h1>
+            <input type="number" id="phone" required class="h-8 w-full">
+            </div>
+           
+             <!-- date  -->
+             <div>
+                <h1 for="dirth" class="text-white pt-8 pb-0">Date of Birth</h1>
+                <input type="date" id="birth" class="h-8 md:w-[200px] w-full text-p-color p-2">  
+            </div>
+            </div>
+             <!-- dropdown -->
+            <div class="flex  gap-6 justify-between md:flex md:flex-row flex-col">
+                <div> 
+            <h1 for="country" class="text-white pt-8">Choose Countery</h1>
+            <select id="Countery" class="h-8 text-p-color md:w-[200px] w-full">
+                <option value="">Select Countery</option>
+                <option value="india">India</option>
+                <option value="bangladesh">Bangladesh</option>
+                <option value="nepal">Nepal</option>
+                <option value="Pakistan">Pakistan</option>
+            </select>
+        </div>
+    <div>
+        <h1 for="country" class="text-white pt-8">Choose Countery</h1>
+            <select id="Countery" class="h-8 md:w-[200px] w-full text-p-color">
+                <option value="">Select Countery</option>
+                <option value="india">India</option>
+                <option value="bangladesh">Bangladesh</option>
+                <option value="nepal">Nepal</option>
+                <option value="Pakistan">Pakistan</option>
+            </select>
+        </div>
+        </div>
+    </fieldset>
+</form>
+    </div>
+            <!-- submit --> 
+            <input type="submit" value="Request Appointment" class="bg-secondary-color w-[100%] mt-11 py-3 text-white hover:bg-white hover:text-black transition ease-out duration-500">  
+        </div>
+        <div> 
+            <img src="img/bg-contact-form.jpg" alt="dock" class=" w-[700px] h-[548px] md:w-[660px] md:h-[462px] object-cover object-right">
+         </div>  
+     </div> 
+  </section>
+  <!-- contact section end  -->
+  <!-- our doctors section start  -->
+  
+    <section class="max-w-[1100px] px-4 m-auto mb-24">
+        <div>
+            <h1 class="text-4xl font-bold text-secondary-color text-center">Our Doctors</h1>
+    <div class="border-b-2 w-[228px] text-center m-auto mt-3 border-border-color"></div>
+    <p class="text-[15px] font-normal m-auto text-center max-w-[600px] pt-5 text-p-color  leading-7">
+        We love what we do and we do it with passion. We value the experimentation, the reformation of the message, and the smart incentives.</p>
+    <div class="flex gap-14 justify-between md:flex md:flex-row flex-col">
+        <div class="pt-24">
+            <img src="img/team1.jpg" alt="image" class="w-full h-auto relative z-0 scale-110 transition-all duration-300 hover:scale-100 rounded-full border">
+            <h2 class="text-center text-[22px] font-semibold text-secondary-color pt-9"> Linda Aboody, MD</h2>
+            <p class="text-center text-[15px] font-normal text-p-color px-3 mb-5">Radiologist</p>
+            <div class="border-b-2 w-[150px] text-center m-auto mt-3 border-border-color"></div>
+            <p class="text-center text-[18px] font-normal text-p-color pt-3 ">New Patient Appointments</p>
+            <a href="tel:908-542-3200" class="text-center text-[15px] font-normal text-primery-color mb-5 ml-14">908-542-3200</a>
+        </div>
+        <div class="pt-24">
+            <img src="img/team2.jpg" alt="image" class="w-full h-auto relative z-0 scale-110 transition-all duration-300 hover:scale-100 rounded-full border">
+            <h2 class="text-center text-[22px] font-semibold text-secondary-color pt-9"> Linda Aboody, MD</h2>
+            <p class="text-center text-[15px] font-normal text-p-color px-3 mb-5">Radiologist</p>
+            <div class="border-b-2 w-[150px] text-center m-auto mt-3 border-border-color"></div>
+            <p class="text-center text-[18px] font-normal text-p-color pt-3 ">New Patient Appointments</p>
+            <a href="tel:908-542-3200" class="text-center text-[15px] font-normal text-primery-color mb-5 ml-14">908-542-3200</a>
+        </div>
+        <div class="pt-24">
+            <img src="img/team3.jpg" alt="image" class="w-full h-auto relative z-0 scale-110 transition-all duration-300 hover:scale-100 rounded-full border">
+            <h2 class="text-center text-[22px] font-semibold text-secondary-color pt-9"> Linda Aboody, MD</h2>
+            <p class="text-center text-[15px] font-normal text-p-color px-3 mb-5">Radiologist</p>
+            <div class="border-b-2 w-[150px] text-center m-auto mt-3 border-border-color"></div>
+            <p class="text-center text-[18px] font-normal text-p-color pt-3 ">New Patient Appointments</p>
+            <a href="tel:908-542-3200" class="text-center text-[15px] font-normal text-primery-color mb-5 ml-14">908-542-3200</a>
+        </div>
+        <div class="pt-24">
+            <img src="img/team4.jpg" alt="image" class="w-full h-auto relative z-0 scale-110 transition-all duration-300 hover:scale-100 rounded-full border">
+            <h2 class="text-center text-[22px] font-semibold text-secondary-color pt-9"> Linda Aboody, MD</h2>
+            <p class="text-center text-[15px] font-normal text-p-color px-3 mb-5">Radiologist</p>
+            <div class="border-b-2 w-[150px] text-center m-auto mt-3 border-border-color"></div>
+            <p class="text-center text-[18px] font-normal text-p-color pt-3 ">New Patient Appointments</p>
+            <a href="tel:908-542-3200" class="text-center text-[15px] font-normal text-primery-color mb-5 ml-14">908-542-3200</a>
+        </div>
+        
+        </div>
+        </div>
+    </section>
+   
+  <!-- our doctors section end  -->
+  
 </body>
 </html>
+
