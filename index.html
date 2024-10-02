@@ -1,268 +1,593 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
+  <head>
     <!-- google font start-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- font-awesome  -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
         theme: {
-            extend: {
-                fontFamily: {
-                  poppins: ["Poppins", 'sans-serif']
-                },
-                backgroundImage: {
-                    'hero-pattern': "url('/img/image.png')",
-                },
-                boxShadow: {
-                    'box': '8px 8px 0px 0px rgba(255, 255, 255)',
-                    'boxone': '0 0 1rem rgba(0, 238, 255)',
-                    'box-hover': '-8px -8px 0px 0px rgba(255, 255, 255)',
-                },
-                colors: {
-                    'text-color': '#828FA6',
-                    'p-color': '#828FA6',
-                    'primery-color': '#3660CC',
-                    'secondary-color': '#3c4d6d',
-                    'border-color': '#3660cc',
-                }
-
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
             },
-
+            backgroundImage: {
+              "hero-pattern": "url('/img/image.png')",
+            },
+            boxShadow: {
+              box: "8px 8px 0px 0px rgba(255, 255, 255)",
+              boxone: "0 0 1rem rgba(0, 238, 255)",
+              "box-hover": "-8px -8px 0px 0px rgba(255, 255, 255)",
+            },
+            colors: {
+              "text-color": "#828FA6",
+              "p-color": "#828FA6",
+              "primery-color": "#3660CC",
+              "secondary-color": "#3c4d6d",
+              "border-color": "#3660cc",
+              "footer-text-color": "#8A8A8A",
+            },
+          },
         },
-    };
-</script>
-</head>
-<body class="font-poppins">
-  <!-- header section start  -->
-   <header>
-    <div class="bg-secondary-color">
-        <div class="max-w-[1200px] px-4 m-auto md:flex flex-row justify-between py-4 hidden">
-            <div class="md:flex gap-3 items-center">
-                <i class="fa-solid fa-square-phone text-2xl" style="color: #ffffff;"></i>
-                <h2 class="text-white text-[16px] font-semibold">Emergency: 1-800-643-4300</h2>
-                <i class="fa-regular fa-clock text-2xl" style="color: #ffffff;"></i>
-                 <h2 class="text-white text-[16px] font-semibold">Working Hours: Monday - Saturday: 24 hours</h2>
-            </div>
-            <div class="flex gap-1 items-center">
-                <img src="img/en.png" alt="english">
-                <h2 class="text-white text-[16px] font-semibold pr-7">English</h2>
-            </div>
+      };
+    </script>
+  </head>
+  <body class="font-poppins">
+    <!-- header section start  -->
+    <header>
+      <div class="bg-secondary-color">
+        <div
+          class="max-w-[1200px] px-4 m-auto md:flex flex-row justify-between py-4 hidden"
+        >
+          <div class="md:flex gap-3 items-center">
+            <i
+              class="fa-solid fa-square-phone text-2xl"
+              style="color: #ffffff"
+            ></i>
+            <h2 class="text-white text-[16px] font-semibold">
+              Emergency: 1-800-643-4300
+            </h2>
+            <i class="fa-regular fa-clock text-2xl" style="color: #ffffff"></i>
+            <h2 class="text-white text-[16px] font-semibold">
+              Working Hours: Monday - Saturday: 24 hours
+            </h2>
+          </div>
+          <div class="flex gap-1 items-center">
+            <img src="img/en.png" alt="english" />
+            <h2 class="text-white text-[16px] font-semibold pr-7">English</h2>
+          </div>
         </div>
-    </div>
-    <div class="bg-primery-color py-[0px]">
-        <div class="max-w-[1200px] px-4 m-auto flex justify-between items-center">
-            <div class="">
-                <img src="img/logo.png" alt="logo">
+      </div>
+      <div class="bg-primery-color py-[0px]">
+        <div
+          class="max-w-[1200px] px-4 m-auto flex justify-between items-center"
+        >
+          <div class="">
+            <img src="img/logo.png" alt="logo" />
+          </div>
+          <div class="">
+            <nav class="md:flex text-white text-[15px] font-medium hidden">
+              <a
+                href="#"
+                class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500"
+                >Departments</a
+              >
+              <a
+                href="#"
+                class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500"
+                >Doctors</a
+              >
+              <a
+                href="#"
+                class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500"
+                >About</a
+              >
+              <a
+                href="#"
+                class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500"
+                >Gallery</a
+              >
+              <a
+                href="#"
+                class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500"
+                >Testimonials</a
+              >
+              <a
+                href="#"
+                class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500"
+                >Blog</a
+              >
+            </nav>
+          </div>
+          <div class="flex items-center gap-4 space-y-2 md:hidden py-4">
+            <span class="text-xl text-white font-medium">Manu</span>
+            <div class="hamburger flex flex-col gap-1">
+              <span class="inline-block h-[2px] w-4 bg-white"></span>
+              <span class="inline-block h-[2px] w-4 bg-white"></span>
             </div>
-            <div class="">
-                <nav class="md:flex text-white text-[15px] font-medium hidden">
-                    <a href="#" class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500">Home</a>
-                    <a href="#" class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500">Departments</a>
-                    <a href="#" class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500">Doctors</a>
-                    <a href="#" class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500">About</a>
-                    <a href="#" class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500">Gallery</a>
-                    <a href="#" class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500">Testimonials</a>
-                    <a href="#" class="hover:bg-secondary-color py-7 px-7 transition ease-out duration-500">Blog</a>
-                </nav>
-            </div>
-            <div class="flex items-center gap-4 space-y-2 md:hidden py-4">
-                <span class="text-xl text-white font-medium">Manu</span>
-                <div class="hamburger flex flex-col gap-1 ">
-                    <span class="inline-block h-[2px] w-4 bg-white"></span>
-                    <span class="inline-block h-[2px] w-4 bg-white"></span>
-                </div>
-            </div>
-        </div> 
-    </div>
-   </header>
-  <!-- header section end  -->
-  <!-- hero section start  -->
-   <section class="max-w-[1200px] px-4 m-auto mb-40">
-    <div class="flex justify-between items-center pt-20 flex-col md:flex md:flex-row gap-12">
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section end  -->
+    <!-- hero section start  -->
+    <section class="max-w-[1200px] px-4 m-auto mb-40">
+      <div
+        class="flex justify-between items-center pt-20 flex-col md:flex md:flex-row gap-12"
+      >
         <div>
-            <h1 class="text-4xl font-bold text-secondary-color">Better Doctors!</h1>
-            <p class="max-w-[690px] text-secondary-color text-[18px] font-normal py-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, iusto.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, iusto.
-            </p>
-            <button class="py-3 px-10 bg-primery-color text-white text-[18px] transition ease-out duration-500 hover:bg-secondary-color mr-10 mb-5">About us</button>
-            <button class="py-3 px-10 bg-secondary-color text-white text-[18px] transition ease-out duration-500 hover:bg-primery-color">Contact</button>
+          <h1 class="text-4xl font-bold text-secondary-color">
+            Better Doctors!
+          </h1>
+          <p
+            class="max-w-[690px] text-secondary-color text-[18px] font-normal py-10"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+            iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptate, iusto.
+          </p>
+          <button
+            class="py-3 px-10 bg-primery-color text-white text-[18px] transition ease-out duration-500 hover:bg-secondary-color mr-10 mb-5"
+          >
+            About us
+          </button>
+          <button
+            class="py-3 px-10 bg-secondary-color text-white text-[18px] transition ease-out duration-500 hover:bg-primery-color"
+          >
+            Contact
+          </button>
         </div>
         <div>
-            <img src="img/doctor-slider.jpg" alt="hero">
+          <img src="img/doctor-slider.jpg" alt="hero" />
         </div>
-    </div>
-    <div class="border-b-2 border"></div>
-   </section>
-  <!-- hero section end  -->
-  <!-- Departments section start  -->
-   <section class="max-w-[1000px] px-4 m-auto">
-    <h1 class="text-4xl font-bold text-secondary-color text-center">Our Departments</h1>
-    <div class="border-b-2 w-[228px] text-center m-auto mt-3 border-border-color"></div>
-    <p class="text-[15px] font-normal m-auto text-center max-w-[600px] pt-5 text-p-color pb-10 leading-7">We understand the importance of approaching each work integrally and believe in the power of simple and easy communication.</p>
-    <div class="flex gap-10 justify-between md:flex md:flex-row flex-col mb-28">
-        <div class="border">
-            <img src="img/department3.jpg" alt="dock" class="w-full">
-            <img src="img/department-icon3.png" alt="department-icon3" class="bg-secondary-color p-4 rounded-full m-auto hover:bg-primery-color transition ease-out duration-500 mt-5">
-            <h2 class="text-center text-[22px] font-semibold text-secondary-color pt-3">Eye Care Unit</h2>
-            <p class="text-center text-[15px] font-normal text-p-color px-3 mb-5"> Our mortgage Advisors can offer you independent advice through our...</p>
-        </div>
-        <div class="border">
-            <img src="img/department1.jpg" alt="dock" class="w-full">
-            <img src="img/department-icon3.png" alt="department-icon3" class="bg-secondary-color p-4 rounded-full m-auto hover:bg-primery-color transition ease-out duration-500 mt-5">
-            <h2 class="text-center text-[22px] font-semibold text-secondary-color pt-3">Eye Care Unit</h2>
-            <p class="text-center text-[15px] font-normal text-p-color px-3 mb-5"> Our mortgage Advisors can offer you independent advice through our...</p>
-        </div>
-        <div class="border">
-            <img src="img/department2.jpg" alt="dock" class="w-full">
-            <img src="img/department-icon3.png" alt="department-icon3" class="bg-secondary-color p-4 rounded-full m-auto hover:bg-primery-color transition ease-out duration-500 mt-5">
-            <h2 class="text-center text-[22px] font-semibold text-secondary-color pt-3">Eye Care Unit</h2>
-            <p class="text-center text-[15px] font-normal text-p-color px-3 mb-5"> Our mortgage Advisors can offer you independent advice through our...</p>
-        </div>
-    </div>
-   </section>
-  <!-- Departments section end  -->
-  <!-- contact section start  -->
-  <section class="max-w-[1100px] px-4 m-auto mb-24">
-    <div class="md:flex md:justify-between flex md:flex-row flex-col">
-     <div class="bg-primery-color py-7 px-9">
-        <h1 class="text-white text-3xl font-semibold">Make an Appointment</h1>
-        <div class="border-b-2 w-[228px]  mt-3 border-white"></div>
-        <div>
-            <form>
-                <!-- box -->
-                <fieldset>
-            <!-- name -->
-             <div class="flex justify-between flex-col md:flex md:flex-row">
-                 <div>
-                     <h1 class="text-white pt-8">Your Name</h1>  
-                     <input type="text" id="name" required class="h-8 w-full">
-                    </div>
-                    <!-- email -->
-                    <div>
-                        <h1 class="text-white pt-8">Your Email</h1>
-                        <input type="email" id="email"required class="h-8 w-full">
-                    </div>
-                </div>
-                    <!-- phone -->
-                    <div class="flex flex-col gap-6 md:flex lg:flex-row justify-between">
-                        <div> 
-            <h1 for="email" class="text-white pt-8">Your Phone</h1>
-            <input type="number" id="phone" required class="h-8 w-full">
-            </div>
-           
-             <!-- date  -->
-             <div>
-                <h1 for="dirth" class="text-white pt-8 pb-0">Date of Birth</h1>
-                <input type="date" id="birth" class="h-8 md:w-[200px] w-full text-p-color p-2">  
-            </div>
-            </div>
-             <!-- dropdown -->
-            <div class="flex  gap-6 justify-between md:flex md:flex-row flex-col">
-                <div> 
-            <h1 for="country" class="text-white pt-8">Choose Countery</h1>
-            <select id="Countery" class="h-8 text-p-color md:w-[200px] w-full">
-                <option value="">Select Countery</option>
-                <option value="india">India</option>
-                <option value="bangladesh">Bangladesh</option>
-                <option value="nepal">Nepal</option>
-                <option value="Pakistan">Pakistan</option>
-            </select>
-        </div>
-    <div>
-        <h1 for="country" class="text-white pt-8">Choose Countery</h1>
-            <select id="Countery" class="h-8 md:w-[200px] w-full text-p-color">
-                <option value="">Select Countery</option>
-                <option value="india">India</option>
-                <option value="bangladesh">Bangladesh</option>
-                <option value="nepal">Nepal</option>
-                <option value="Pakistan">Pakistan</option>
-            </select>
-        </div>
-        </div>
-    </fieldset>
-</form>
-    </div>
-            <!-- submit --> 
-            <input type="submit" value="Request Appointment" class="bg-secondary-color w-[100%] mt-11 py-3 text-white hover:bg-white hover:text-black transition ease-out duration-500">  
-        </div>
-        <div> 
-            <img src="img/bg-contact-form.jpg" alt="dock" class=" w-[700px] h-[548px] md:w-[660px] md:h-[462px] object-cover object-right">
-         </div>  
-     </div> 
-  </section>
-  <!-- contact section end  -->
-  <!-- our doctors section start  -->
-  
-    <section class="max-w-[1100px] px-4 m-auto mb-24">
-        <div>
-            <h1 class="text-4xl font-bold text-secondary-color text-center">Our Doctors</h1>
-    <div class="border-b-2 w-[228px] text-center m-auto mt-3 border-border-color"></div>
-    <p class="text-[15px] font-normal m-auto text-center max-w-[600px] pt-5 text-p-color  leading-7">
-        We love what we do and we do it with passion. We value the experimentation, the reformation of the message, and the smart incentives.</p>
-    <div class="flex gap-14 justify-between md:flex md:flex-row flex-col">
-        <div class="pt-24">
-            <img src="img/team1.jpg" alt="image" class="w-full h-auto relative z-0 scale-110 transition-all duration-300 hover:scale-100 rounded-full border">
-            <h2 class="text-center text-[22px] font-semibold text-secondary-color pt-9"> Linda Aboody, MD</h2>
-            <p class="text-center text-[15px] font-normal text-p-color px-3 mb-5">Radiologist</p>
-            <div class="border-b-2 w-[150px] text-center m-auto mt-3 border-border-color"></div>
-            <p class="text-center text-[18px] font-normal text-p-color pt-3 ">New Patient Appointments</p>
-            <a href="tel:908-542-3200" class="text-center text-[15px] font-normal text-primery-color mb-5 ml-14">908-542-3200</a>
-        </div>
-        <div class="pt-24">
-            <img src="img/team2.jpg" alt="image" class="w-full h-auto relative z-0 scale-110 transition-all duration-300 hover:scale-100 rounded-full border">
-            <h2 class="text-center text-[22px] font-semibold text-secondary-color pt-9"> Linda Aboody, MD</h2>
-            <p class="text-center text-[15px] font-normal text-p-color px-3 mb-5">Radiologist</p>
-            <div class="border-b-2 w-[150px] text-center m-auto mt-3 border-border-color"></div>
-            <p class="text-center text-[18px] font-normal text-p-color pt-3 ">New Patient Appointments</p>
-            <a href="tel:908-542-3200" class="text-center text-[15px] font-normal text-primery-color mb-5 ml-14">908-542-3200</a>
-        </div>
-        <div class="pt-24">
-            <img src="img/team3.jpg" alt="image" class="w-full h-auto relative z-0 scale-110 transition-all duration-300 hover:scale-100 rounded-full border">
-            <h2 class="text-center text-[22px] font-semibold text-secondary-color pt-9"> Linda Aboody, MD</h2>
-            <p class="text-center text-[15px] font-normal text-p-color px-3 mb-5">Radiologist</p>
-            <div class="border-b-2 w-[150px] text-center m-auto mt-3 border-border-color"></div>
-            <p class="text-center text-[18px] font-normal text-p-color pt-3 ">New Patient Appointments</p>
-            <a href="tel:908-542-3200" class="text-center text-[15px] font-normal text-primery-color mb-5 ml-14">908-542-3200</a>
-        </div>
-        <div class="pt-24">
-            <img src="img/team4.jpg" alt="image" class="w-full h-auto relative z-0 scale-110 transition-all duration-300 hover:scale-100 rounded-full border">
-            <h2 class="text-center text-[22px] font-semibold text-secondary-color pt-9"> Linda Aboody, MD</h2>
-            <p class="text-center text-[15px] font-normal text-p-color px-3 mb-5">Radiologist</p>
-            <div class="border-b-2 w-[150px] text-center m-auto mt-3 border-border-color"></div>
-            <p class="text-center text-[18px] font-normal text-p-color pt-3 ">New Patient Appointments</p>
-            <a href="tel:908-542-3200" class="text-center text-[15px] font-normal text-primery-color mb-5 ml-14">908-542-3200</a>
-        </div>
-        
-        </div>
-        </div>
+      </div>
+      <div class="border-b-2 border"></div>
     </section>
-  <!-- our doctors section end  -->
-  <!-- Quality section start  -->
-   <section class="max-w-[1100px] px-4 m-auto mb-24">
-    <div>
-       <div>
-        <h2 class="text-[22px] font-semibold text-secondary-color pt-9">15 Years of Quality Service and
-            Helping People</h2>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-        <div class="flex gap-3 items-center">
-            <img src="img/fancy-icon-1.png" alt="w-full">
-            <div>
-                <p>Proper Diagonsis</p>
-                 <p>Duis aute irure dolor in reprehenderit in voluptate vel.</p>
+    <!-- hero section end  -->
+    <!-- Departments section start  -->
+    <section class="max-w-[1000px] px-4 m-auto">
+      <h1 class="text-4xl font-bold text-secondary-color text-center">
+        Our Departments
+      </h1>
+      <div
+        class="border-b-2 w-[228px] text-center m-auto mt-3 border-border-color"
+      ></div>
+      <p
+        class="text-[15px] font-normal m-auto text-center max-w-[600px] pt-5 text-p-color pb-10 leading-7"
+      >
+        We understand the importance of approaching each work integrally and
+        believe in the power of simple and easy communication.
+      </p>
+      <div
+        class="flex gap-10 justify-between md:flex md:flex-row flex-col mb-28"
+      >
+        <div class="border">
+          <img src="img/department3.jpg" alt="dock" class="w-full" />
+          <img
+            src="img/department-icon3.png"
+            alt="department-icon3"
+            class="bg-secondary-color p-4 rounded-full m-auto hover:bg-primery-color transition ease-out duration-500 mt-5"
+          />
+          <h2
+            class="text-center text-[22px] font-semibold text-secondary-color pt-3"
+          >
+            Eye Care Unit
+          </h2>
+          <p class="text-center text-[15px] font-normal text-p-color px-3 mb-5">
+            Our mortgage Advisors can offer you independent advice through
+            our...
+          </p>
+        </div>
+        <div class="border">
+          <img src="img/department1.jpg" alt="dock" class="w-full" />
+          <img
+            src="img/department-icon3.png"
+            alt="department-icon3"
+            class="bg-secondary-color p-4 rounded-full m-auto hover:bg-primery-color transition ease-out duration-500 mt-5"
+          />
+          <h2
+            class="text-center text-[22px] font-semibold text-secondary-color pt-3"
+          >
+            Eye Care Unit
+          </h2>
+          <p class="text-center text-[15px] font-normal text-p-color px-3 mb-5">
+            Our mortgage Advisors can offer you independent advice through
+            our...
+          </p>
+        </div>
+        <div class="border">
+          <img src="img/department2.jpg" alt="dock" class="w-full" />
+          <img
+            src="img/department-icon3.png"
+            alt="department-icon3"
+            class="bg-secondary-color p-4 rounded-full m-auto hover:bg-primery-color transition ease-out duration-500 mt-5"
+          />
+          <h2
+            class="text-center text-[22px] font-semibold text-secondary-color pt-3"
+          >
+            Eye Care Unit
+          </h2>
+          <p class="text-center text-[15px] font-normal text-p-color px-3 mb-5">
+            Our mortgage Advisors can offer you independent advice through
+            our...
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Departments section end  -->
+    <!-- contact section start  -->
+    <section class="max-w-[1100px] px-4 m-auto mb-24">
+      <div class="md:flex md:justify-between flex md:flex-row flex-col">
+        <div class="bg-primery-color py-7 px-9">
+          <h1 class="text-white text-3xl font-semibold">Make an Appointment</h1>
+          <div class="border-b-2 w-[228px] mt-3 border-white"></div>
+          <div>
+            <form>
+              <!-- box -->
+              <fieldset>
+                <!-- name -->
+                <div class="flex justify-between flex-col md:flex md:flex-row">
+                  <div>
+                    <h1 class="text-white pt-8">Your Name</h1>
+                    <input type="text" id="name" required class="h-8 w-full" />
+                  </div>
+                  <!-- email -->
+                  <div>
+                    <h1 class="text-white pt-8">Your Email</h1>
+                    <input
+                      type="email"
+                      id="email"
+                      required
+                      class="h-8 w-full"
+                    />
+                  </div>
+                </div>
+                <!-- phone -->
+                <div
+                  class="flex flex-col gap-6 md:flex lg:flex-row justify-between"
+                >
+                  <div>
+                    <h1 for="email" class="text-white pt-8">Your Phone</h1>
+                    <input
+                      type="number"
+                      id="phone"
+                      required
+                      class="h-8 w-full"
+                    />
+                  </div>
+
+                  <!-- date  -->
+                  <div>
+                    <h1 for="dirth" class="text-white pt-8 pb-0">
+                      Date of Birth
+                    </h1>
+                    <input
+                      type="date"
+                      id="birth"
+                      class="h-8 md:w-[200px] w-full text-p-color p-2"
+                    />
+                  </div>
+                </div>
+                <!-- dropdown -->
+                <div
+                  class="flex gap-6 justify-between md:flex md:flex-row flex-col"
+                >
+                  <div>
+                    <h1 for="country" class="text-white pt-8">
+                      Choose Countery
+                    </h1>
+                    <select
+                      id="Countery"
+                      class="h-8 text-p-color md:w-[200px] w-full pl-2"
+                    >
+                      <option value="">Select Countery</option>
+                      <option value="india">India</option>
+                      <option value="bangladesh">Bangladesh</option>
+                      <option value="nepal">Nepal</option>
+                      <option value="Pakistan">Pakistan</option>
+                    </select>
+                  </div>
+                  <div>
+                    <h1 for="country" class="text-white pt-8">
+                      Choose Countery
+                    </h1>
+                    <select
+                      id="Countery"
+                      class="h-8 md:w-[200px] w-full text-p-color pl-2"
+                    >
+                      <option value="">Select Countery</option>
+                      <option value="india">India</option>
+                      <option value="bangladesh">Bangladesh</option>
+                      <option value="nepal">Nepal</option>
+                      <option value="Pakistan">Pakistan</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <!-- submit -->
+          <input
+            type="submit"
+            value="Request Appointment"
+            class="bg-secondary-color w-[100%] mt-11 py-3 text-white hover:bg-white hover:text-black transition ease-out duration-500"
+          />
+        </div>
+        <div>
+          <img
+            src="img/bg-contact-form.jpg"
+            alt="dock"
+            class="w-[700px] h-[548px] md:w-[660px] md:h-[462px] object-cover object-right"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- contact section end  -->
+    <!-- our doctors section start  -->
+
+    <section class="max-w-[1100px] px-4 m-auto mb-28">
+      <div>
+        <h1 class="text-4xl font-bold text-secondary-color text-center">
+          Our Doctors
+        </h1>
+        <div
+          class="border-b-2 w-[228px] text-center m-auto mt-3 border-border-color"
+        ></div>
+        <p
+          class="text-[15px] font-normal m-auto text-center max-w-[600px] pt-5 text-p-color leading-7"
+        >
+          We love what we do and we do it with passion. We value the
+          experimentation, the reformation of the message, and the smart
+          incentives.
+        </p>
+        <div class="flex gap-14 justify-between md:flex md:flex-row flex-col">
+          <div class="pt-24">
+            <img
+              src="img/team1.jpg"
+              alt="image"
+              class="w-full h-auto relative z-0 scale-110 transition-all duration-300 hover:scale-100 rounded-full border"
+            />
+            <h2
+              class="text-center text-[22px] font-semibold text-secondary-color pt-9"
+            >
+              Linda Aboody, MD
+            </h2>
+            <p
+              class="text-center text-[15px] font-normal text-p-color px-3 mb-5"
+            >
+              Radiologist
+            </p>
+            <div
+              class="border-b-2 w-[150px] text-center m-auto mt-3 border-border-color"
+            ></div>
+            <p class="text-center text-[18px] font-normal text-p-color pt-3">
+              New Patient Appointments
+            </p>
+            <a
+              href="tel:908-542-3200"
+              class="text-center text-[15px] font-normal text-primery-color mb-5 ml-14"
+              >908-542-3200</a
+            >
+          </div>
+          <div class="pt-24">
+            <img
+              src="img/team2.jpg"
+              alt="image"
+              class="w-full h-auto relative z-0 scale-110 transition-all duration-300 hover:scale-100 rounded-full border"
+            />
+            <h2
+              class="text-center text-[22px] font-semibold text-secondary-color pt-9"
+            >
+              Linda Aboody, MD
+            </h2>
+            <p
+              class="text-center text-[15px] font-normal text-p-color px-3 mb-5"
+            >
+              Radiologist
+            </p>
+            <div
+              class="border-b-2 w-[150px] text-center m-auto mt-3 border-border-color"
+            ></div>
+            <p class="text-center text-[18px] font-normal text-p-color pt-3">
+              New Patient Appointments
+            </p>
+            <a
+              href="tel:908-542-3200"
+              class="text-center text-[15px] font-normal text-primery-color mb-5 ml-14"
+              >908-542-3200</a
+            >
+          </div>
+          <div class="pt-24">
+            <img
+              src="img/team3.jpg"
+              alt="image"
+              class="w-full h-auto relative z-0 scale-110 transition-all duration-300 hover:scale-100 rounded-full border"
+            />
+            <h2
+              class="text-center text-[22px] font-semibold text-secondary-color pt-9"
+            >
+              Linda Aboody, MD
+            </h2>
+            <p
+              class="text-center text-[15px] font-normal text-p-color px-3 mb-5"
+            >
+              Radiologist
+            </p>
+            <div
+              class="border-b-2 w-[150px] text-center m-auto mt-3 border-border-color"
+            ></div>
+            <p class="text-center text-[18px] font-normal text-p-color pt-3">
+              New Patient Appointments
+            </p>
+            <a
+              href="tel:908-542-3200"
+              class="text-center text-[15px] font-normal text-primery-color mb-5 ml-14"
+              >908-542-3200</a
+            >
+          </div>
+          <div class="pt-24">
+            <img
+              src="img/team4.jpg"
+              alt="image"
+              class="w-full h-auto relative z-0 scale-110 transition-all duration-300 hover:scale-100 rounded-full border"
+            />
+            <h2
+              class="text-center text-[22px] font-semibold text-secondary-color pt-9"
+            >
+              Linda Aboody, MD
+            </h2>
+            <p
+              class="text-center text-[15px] font-normal text-p-color px-3 mb-5"
+            >
+              Radiologist
+            </p>
+            <div
+              class="border-b-2 w-[150px] text-center m-auto mt-3 border-border-color"
+            ></div>
+            <p class="text-center text-[18px] font-normal text-p-color pt-3">
+              New Patient Appointments
+            </p>
+            <a
+              href="tel:908-542-3200"
+              class="text-center text-[15px] font-normal text-primery-color mb-5 ml-14"
+              >908-542-3200</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our doctors section end  -->
+    <!-- Quality section start  -->
+    <section class="max-w-[1100px] px-4 m-auto mb-28">
+      <div>
+        <div class="flex gap-9 flex-col md:flex md:flex-row items-center">
+          <div class="gap-6 flex flex-col">
+            <h2 class="text-[30px] font-semibold text-secondary-color pt-9">
+              15 Years of Quality Service and Helping People
+            </h2>
+            <p
+              class="max-w-[500px] text-[13px] font-normal text-p-color leading-6"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation.
+            </p>
+            <div class="flex gap-5 items-center">
+              <img src="img/fancy-icon-1.png" alt="w-full" />
+              <div>
+                <p class="text-[15px] font-semibold text-secondary-color">
+                  Proper Diagonsis
+                </p>
+                <p class="text-[15px] font-normal text-p-color">
+                  Duis aute irure dolor in reprehenderit in voluptate vel.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-7 items-center">
+              <img src="img/fancy-icon-2.png" alt="w-full" />
+              <div>
+                <p class="text-[15px] font-semibold text-secondary-color">
+                  Quality Doctors
+                </p>
+                <p class="text-[15px] font-normal text-p-color">
+                  Cillum dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-5 items-center">
+              <img src="img/fancy-icon-3.png" alt="w-full" />
+              <div>
+                <p class="text-[15px] font-semibold text-secondary-color">
+                  Top Class Infrastructure
+                </p>
+                <p class="text-[15px] font-normal text-p-color">
+                  Excepteur sint occaecat cupidatat non proident.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <img src="img/about.png" alt="about"/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Quality section end  -->
+    <!-- footer section start  -->
+    <footer class="bg-black">
+        <div class="max-w-[1100px] px-4 m-auto">
+            <div class="flex justify-between gap-9 py-28 flex-col md:flex md:flex-row">
+                <div class="md:w-[35%]">
+                    <img src="img/logo-footer.png" alt="footer" class="pb-7">
+                    <p class="text-footer-text-color text-[15px] font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                </div>
+                <div class="md:w-[20%]">
+                    <h1 class="text-white font-semibold text-2xl pb-7">Links</h1>
+                    <a href="#" class="text-footer-text-color text-[15px] font-normal hover:text-primery-color transition ease-out duration-500 pb-5 block"><span class="text-primery-color">></span> Home</a>
+                    <a href="#" class="text-footer-text-color text-[15px] font-normal hover:text-primery-color transition ease-out duration-500 pb-5 block"><span class="text-primery-color">></span> Services</a>
+                    <a href="#" class="text-footer-text-color text-[15px] font-normal hover:text-primery-color transition ease-out duration-500 pb-5 block"><span class="text-primery-color">></span> About Us</a>
+                    <a href="#" class="text-footer-text-color text-[15px] font-normal hover:text-primery-color transition ease-out duration-500 pb-5 block"><span class="text-primery-color">></span> Testimonials</a>
+                    <a href="#" class="text-footer-text-color text-[15px] font-normal hover:text-primery-color transition ease-out duration-500 pb-5 block"><span class="text-primery-color">></span> News</a>
+                    <a href="#" class="text-footer-text-color text-[15px] font-normal hover:text-primery-color transition ease-out duration-500 pb-5 block"><span class="text-primery-color">></span> Contact</a>
+                </div>
+                <div class="md:w-[25%]">
+                    <h1 class="text-white font-semibold text-2xl pb-7">Support</h1>
+                    <a href="#" class="text-footer-text-color text-[15px] font-normal hover:text-primery-color transition ease-out duration-500 pb-5 block"><span class="text-primery-color">></span> Contact Us</a>
+                    <a href="#" class="text-footer-text-color text-[15px] font-normal hover:text-primery-color transition ease-out duration-500 pb-5 block"><span class="text-primery-color">></span> Submit a Ticket</a>
+                    <a href="#" class="text-footer-text-color text-[15px] font-normal hover:text-primery-color transition ease-out duration-500 pb-5 block"><span class="text-primery-color">></span> Visit Knowledge Base</a>
+                    <a href="#" class="text-footer-text-color text-[15px] font-normal hover:text-primery-color transition ease-out duration-500 pb-5 block"><span class="text-primery-color">></span> Support System</a>
+                    <a href="#" class="text-footer-text-color text-[15px] font-normal hover:text-primery-color transition ease-out duration-500 pb-5 block"><span class="text-primery-color">></span> Refund Policy</a>
+                    <a href="#" class="text-footer-text-color text-[15px] font-normal hover:text-primery-color transition ease-out duration-500 pb-5 block"><span class="text-primery-color">></span> Professional Services</a>
+                </div>
+                <div class="md:w-[20%]">
+                    <h1 class="text-white font-semibold text-2xl pb-7">Gallery</h1>
+                    <div class="flex gap-2 pb-2">
+                        <img src="img/gallery-01.jpg" alt="" height="50" width="100">
+                        <img src="img/gallery-02.jpg" alt="" height="50" width="100">
+                        <img src="img/gallery-03.jpg" alt="" height="50" width="100">
+                    </div>
+                    <div class="flex gap-2 pb-2">
+                        <img src="img/gallery-04.jpg" alt="" height="50" width="100">
+                        <img src="img/gallery-05.jpg" alt="" height="50" width="100">
+                        <img src="img/gallery-06.jpg" alt="" height="50" width="100">
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between py-6 flex-col md:flex md:flex-row gap-5">
+                <div>
+                    <p class="text-footer-text-color font-normal text-[15px]" >2024 © All Rights Reserved by <a class="text-primery-color" href="https://ibrahimmondal.in" target="_blank">IBRAHIM</a></p>
+                </div>
+                <div class="flex gap-3">
+                    <a href="#"><i class="fa-brands fa-facebook hover:text-primery-color text-white transition ease-out duration-500"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter hover:text-primery-color text-white transition ease-out duration-500 "></i></a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin hover:text-primery-color text-white transition ease-out duration-500"></i>
+                    </a>
+                    <a href="#"><i class="fa-brands fa-google-plus-g hover:text-primery-color text-white transition ease-out duration-500"></i></a>
+                    <a href="#">
+                        <i class="fa-brands fa-pinterest hover:text-primery-color text-white transition ease-out duration-500"></i>
+                    </a>
+                </div>
             </div>
         </div>
-       </div>
-    </div>
-   </section>
-  <!-- Quality section end  -->
-  
-</body>
+    </footer>
+    <!-- footer section end  -->
+  </body>
 </html>
-
